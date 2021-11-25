@@ -42,4 +42,11 @@ The computer does the same.
                     return sReturn + " ... I win"
                 self.__nLast += 1
             return sReturn
-        
+
+if __name__ == '__main__':
+    oGame = Game21()
+
+    while True:
+        sInput = input("> ")
+        sReturn = oGame.takeTurn(sInput)
+        print(sReturn)
